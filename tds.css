@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #417daf;
+    color: #417daf;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(  #ffffff,#417daf);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.caixa {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 img {
+    width: 200px;
+    height: auto;
+}
+
+.intro {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #4a4a4a;
+}
+
+.banner-cabecalho {
+    padding: 20px 0;
+}
+
+.banner-cabecalho img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    height: auto;
+}
+
+main {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-formulario {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 850px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 30px 0;
+}
+
+.info-cabecalho {
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+
+.grupo-campo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.grupo-campo label {
+    font-weight: bold;
+    color: #555;
+}
+
+.grupo-campo input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.grupo-campo input:focus {
+    border-color:  #417daf;
+    box-shadow: 0 0 5px #417daf(128, 84, 95, 0.5);
+    outline: none;
+}
+
+/* Estilo para o campo de arquivo personalizado */
+.campo-arquivo-personalizado {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.label-arquivo {
+    display: inline-block;
+    background-color: #417daf;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.label-arquivo:hover {
+    background-color: #417daf;
+}
+
+/* Esconde o input de arquivo real */
+#anexar-documentos {
+    display: none;
+}
+
+
+/* Tamanhos de campo */
+.campo-minimo { width: 50px; }
+.campo-pequeno { width: 100px; }
+.campo-medio { width: 150px; }
+.campo-grande { width: 200px; }
+.campo-max { width: 90%; }
+
+.opcoes-curso {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.declaracao {
+    background-color: #f9f9f9;
+    border-left: 4px solid #417daf;
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 0.9rem;
+}
+
+.lista-documentos, .campos-assinatura, .campos-pontuacao, .comprovante {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+.botao-enviar {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #417daf;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 30px;
+}
+
+.botao-enviar:hover {
+    background-color: #255074;
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    background-color: #31437c;
+    color: white;
+    padding: 30px 0;
+}
+
+footer img {
+    width: 10%;
+    max-width: 80px;
+    height: auto;
+}
+
+.direitos-autorais {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Estilo para campos somente leitura */
+input[readonly] {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+    border: 1px solid #ced4da;
+}
+
+.nota-importante {
+    text-align: center;
+    font-size: 1rem;
+    color: #c0392b;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
